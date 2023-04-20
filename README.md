@@ -73,7 +73,7 @@ the logged object and find the following answers.
 
 1. The 5th book in the series
 2. The 1031st character in the series
-3. The total number of pages of all the books
+cd D  
 
 Note that you do not need to encode these strategies to pass the lab. It's not
 uncommon for developers who are integrating with third-party APIs to have to do

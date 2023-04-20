@@ -1,8 +1,8 @@
 function fetchBooks() {
   return fetch('https://anapioficeandfire.com/api/books')
-  .then((resp) => resp.json())
-  .then((json) => renderBooks(json));
- 
+    .then((resp) => resp.json())
+    .then((json) => renderBooks(json));
+
 }
 
 function renderBooks(books) {
@@ -14,12 +14,16 @@ function renderBooks(books) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   fetchBooks()
 })
 
 
-/* fetch('https://anapioficeandfire.com/api/books')
+
+
+
+
+fetch('https://anapioficeandfire.com/api/books')
   .then((resp) => resp.json())
   .then(function (val) {
     console.log(val[4]);
@@ -31,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
       numberOfPages: 784, …} */
 
 
- /* fetch('https://anapioficeandfire.com/api/characters/1031')
+  fetch('https://anapioficeandfire.com/api/characters/1031')
   .then((resp) => resp.json())
   .then(function (books) {
     console.log(books);
@@ -45,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    /*fetch('https://anapioficeandfire.com/api/books')
+    fetch('https://anapioficeandfire.com/api/books')
     .then((resp) => resp.json())
     .then(function (books) {
       books.forEach(function (val) {
@@ -68,7 +72,7 @@ VM399:5 The total number of pages of the book The Rogue Prince are: 832
 */
 
 
-    /*fetch('https://anapioficeandfire.com/api/books')
+    fetch('https://anapioficeandfire.com/api/books')
   .then((resp) => resp.json())
     .then(function (books) {
       let result = 0;
@@ -82,4 +86,4 @@ VM399:5 The total number of pages of the book The Rogue Prince are: 832
 /*   
 Promise {<pending>}
   The total number of pages of all books are 6626
- */ 
+*/
